@@ -2,17 +2,13 @@
 
 웹툰과 소설을 관리하고 열람할 수 있는 데스크톱 애플리케이션입니다.
 
-A desktop application for managing and browsing webtoons and novels.
-
-## 📖 프로젝트 소개 (Project Overview)
+## 📖 프로젝트 소개
 
 Internet Library는 네이버와 카카오의 웹툰을 탐색하고 북마크할 수 있으며, 소설 정보를 관리할 수 있는 Java Swing 기반의 데스크톱 애플리케이션입니다. 한국 웹툰 API와 연동하여 최신 웹툰 정보를 제공합니다.
 
-Internet Library is a Java Swing-based desktop application that allows users to browse and bookmark webtoons from NAVER and KAKAO, and manage novel information. It integrates with the Korea Webtoon API to provide up-to-date webtoon information.
+## ✨ 주요 기능
 
-## ✨ 주요 기능 (Key Features)
-
-### 웹툰 관리 (Webtoon Management)
+### 웹툰 관리
 - 네이버 및 카카오 웹툰 탐색
 - 요일별 웹툰 필터링 (월~일)
 - 키워드 기반 웹툰 검색
@@ -21,35 +17,35 @@ Internet Library is a Java Swing-based desktop application that allows users to 
 - 썸네일 이미지 미리보기
 - 클릭하여 웹툰 URL 열기
 
-### 소설 관리 (Novel Management)
+### 소설 관리
 - 소설 추가 (제목, 작가, URL)
 - 소설 정보 수정
 - 소설 삭제
 - 저장된 소설 목록 조회
 - 더블클릭으로 소설 URL 열기
 
-### 북마크 시스템 (Bookmark System)
+### 북마크 시스템
 - 즐겨찾는 웹툰/소설 저장
 - 북마크 제거
 - SQL Server를 통한 영구 저장
 
-## 🛠 기술 스택 (Technology Stack)
+## 🛠 기술 스택
 
-- **언어 (Language)**: Java
-- **GUI 프레임워크 (GUI Framework)**: Java Swing
-- **데이터베이스 (Database)**: Microsoft SQL Server
-- **외부 API (External API)**: Korea Webtoon API
-- **JSON 파싱 (JSON Parsing)**: org.json
+- **언어**: Java
+- **GUI 프레임워크**: Java Swing
+- **데이터베이스**: Microsoft SQL Server
+- **외부 API**: Korea Webtoon API
+- **JSON 파싱**: org.json
 
-## 📋 사전 요구사항 (Prerequisites)
+## 📋 사전 요구사항
 
 - Java Development Kit (JDK) 8 이상
 - Microsoft SQL Server
 - JDBC Driver for SQL Server
 
-## ⚙️ 설치 및 설정 (Installation & Setup)
+## ⚙️ 설치 및 설정
 
-### 1. 데이터베이스 설정 (Database Setup)
+### 1. 데이터베이스 설정
 
 SQL Server에서 다음 설정으로 데이터베이스를 생성하세요:
 
@@ -62,14 +58,14 @@ SQL Server에서 다음 설정으로 데이터베이스를 생성하세요:
 
 필요한 테이블을 생성하세요 (북마크 저장용).
 
-### 2. 프로젝트 클론 (Clone the Project)
+### 2. 프로젝트 클론
 
 ```bash
 git clone https://github.com/KING-WS/Internet_Library.git
 cd Internet_Library
 ```
 
-### 3. 프로젝트 빌드 및 실행 (Build and Run)
+### 3. 프로젝트 빌드 및 실행
 
 Java IDE (IntelliJ IDEA, Eclipse 등)에서 프로젝트를 열고:
 
@@ -84,7 +80,7 @@ javac DB/*.java
 java DB.MainMenuViewer
 ```
 
-## 🚀 사용 방법 (Usage)
+## 🚀 사용 방법
 
 ### 메인 화면
 - **웹툰 보기**: 웹툰 탐색 화면으로 이동
@@ -103,7 +99,7 @@ java DB.MainMenuViewer
 3. **삭제**: 선택한 소설을 제거합니다
 4. 소설 항목을 더블클릭하여 URL을 엽니다
 
-## 📁 프로젝트 구조 (Project Structure)
+## 📁 프로젝트 구조
 
 ```
 InternetLibrary/
@@ -116,26 +112,24 @@ InternetLibrary/
     └── banner.png                # 홈 화면 배너 이미지
 ```
 
-## 👥 개발자 (Authors)
+## 👥 개발자
 
-- 구민우 (Gu Min-woo)
-- 김우성 (Kim Woo-sung)
-- 김형경 (Kim Hyung-gyeong)
+- 구민우
+- 김우성
+- 김형경
 
-## 📝 라이선스 (License)
+## 📝 라이선스
 
 이 프로젝트의 라이선스 정보는 별도로 명시되지 않았습니다.
 
-## 🔗 관련 링크 (Related Links)
+## 🔗 관련 링크
 
 - Korea Webtoon API: https://korea-webtoon-api-cc7dda2f0d77.herokuapp.com/webtoons
 
-## 📸 스크린샷 (Screenshots)
+## 📸 스크린샷
 
 *스크린샷 추가 예정*
 
 ---
 
-**Note**: 데이터베이스 비밀번호와 같은 민감한 정보는 프로덕션 환경에서는 환경 변수나 설정 파일로 분리하여 관리하는 것을 권장합니다.
-
-**Note**: Sensitive information such as database passwords should be managed through environment variables or configuration files in production environments.
+**참고**: 데이터베이스 비밀번호와 같은 민감한 정보는 프로덕션 환경에서는 환경 변수나 설정 파일로 분리하여 관리하는 것을 권장합니다.
